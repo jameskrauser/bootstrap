@@ -24,15 +24,24 @@ $(document).ready(function() {
 			
 			//$button.after('<span>登入成功...</span>');
 			//alert("account ok");
-			//window.location='contact.html';
-			document.getElementById("login_name").innerHTML =  "<span style='color:#FF0000'> 登入成功 </span>";
+			// $('form#signin').fadeIn('fast');
+			
+			//javascript style
+			//var a = document.getElementById("signin-account");		
+			//a.style.display = 'none';
+			
+			
+			$("#signin-account").fadeTo("slow",0);
+			$("#signin-password").fadeTo("slow",0);
+			$("#real_login").fadeTo("slow",0);
+			document.getElementById("login_name").innerHTML =  "<span style='color:#FF0000; font-size:8em'> 登入成功 </span>";
 			
 		}
 		else{
 			
 			//$button.after('<span>帳號或密碼錯誤</span>');
 			//alert("account fail");
-			document.getElementById("login_name").innerHTML = '登入失敗!';
+			document.getElementById("login_name").innerHTML = "<span style='color:#FF0000; font-size:8em'>登入失敗  </span>";
 		}
 		 
 		  
